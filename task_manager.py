@@ -54,3 +54,8 @@ class TaskManager:
                 task.name = new_name
                 task.description = new_description
                 break
+
+    def export_tasks(self, file_path):
+        with open(file_path, 'w') as file:
+            for task in self.tasks:
+                file.write(f"ID: {task.id}, Name: {task.name}, Description: {task.description}, Priority: {task.priority}, Created at: {task.created_at}\n")

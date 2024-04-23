@@ -10,7 +10,8 @@ if __name__ == "__main__":
         print("4. Buscar tarea por ID o por nombre")
         print("5. Editar nombre y descripción de una tarea por ID")
         print("6. Eliminar tarea por ID")
-        print("7. Salir")
+        print("7. Exportar tareas a un archivo")
+        print("8. Salir")
 
         choice = input("Seleccione una opción: ")
 
@@ -44,6 +45,11 @@ if __name__ == "__main__":
             manager.remove_task(id)
             print("Tarea eliminada con éxito.")
         elif choice == "7":
+            file_path = input("Ingrese la ruta del archivo para exportar las tareas: ")
+            manager.export_tasks(file_path)
+            print("Tareas exportadas con éxito.")
+
+        elif choice == "8":
             break
         else:
             print("Opción no válida. Por favor, seleccione nuevamente.")
