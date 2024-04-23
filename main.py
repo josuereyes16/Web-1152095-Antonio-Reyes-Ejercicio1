@@ -18,22 +18,22 @@ if __name__ == "__main__":
         if choice == "1":
             manager.register_task()
         elif choice == "2":
-            print("\nTodas las tareas (orden de agregado):")
+            print("Todas las tareas (orden de agregado):")
             for task in reversed(manager.get_tasks_by_order_added()):
                 print(task)
         elif choice == "3":
-            print("\nTodas las tareas (orden de prioridad):")
+            print("Todas las tareas (orden de prioridad):")
             for task in manager.get_all_tasks():
                 print(task)
         elif choice == "4":
             search_term = input("Ingrese el ID o nombre de la tarea a buscar: ")
             results = manager.search_task(search_term)
             if results:
-                print("\nResultado de la búsqueda:")
+                print("Resultado de la búsqueda:")
                 for task in results:
                     print(task)
             else:
-                print("\nNo se encontraron tareas con ese ID o nombre.")
+                print("No se encontraron tareas con ese ID o nombre.")
         elif choice == "5":
             id = int(input("Ingrese el ID de la tarea a editar: "))
             new_name = input("Ingrese el nuevo nombre de la tarea: ")
