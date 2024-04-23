@@ -1,0 +1,3 @@
+ID: 1, Name: web, Description: estudiar, Priority: 1, Created at: 2024-04-23 10:24:31.742615
+ID: 2, Name: etica, Description: estudiar, Priority: 2, Created at: 2024-04-23 10:25:10.623999
+ID: 3, Name: catedra, Description: estudiar, Priority: 3, Created at: 2024-04-23 10:25:20.442910

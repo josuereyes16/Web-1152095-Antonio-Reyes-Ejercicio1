@@ -46,7 +46,7 @@ class TaskManager:
         for task in self.tasks:
             if str(task.id) == search_term or task.name.lower() == search_term.lower():
                 results.append(task)
-        return results    
+        return results 
 
     def edit_task(self, id, new_name, new_description):
         for task in self.tasks:
